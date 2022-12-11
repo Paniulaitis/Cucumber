@@ -1,0 +1,46 @@
+-------------------------------------------------------------------------------
+Test set: Ноутбуки
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 417.683 s <<< FAILURE! - in Ноутбуки
+Ноутбуки - Просмотр страницы Ноутбуки  Time elapsed: 54.38 s  <<< ERROR!
+io.cucumber.junit.platform.engine.UndefinedStepException: 
+The step 'Проверка: В блоке Характеристики страницы "Продукт. Ноутбук" значение Объем оперативной памяти содержит текст "32 ГБ"' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Тогда("Проверка: В блоке Характеристики страницы {string} значение Объем оперативной памяти содержит текст {string}")
+public void проверка_в_блоке_характеристики_страницы_значение_объем_оперативной_памяти_содержит_текст(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Ноутбуки - Фильтрация и сортировка Ноутбуков на странице Ноутбуки - Примеры - Example #3  Time elapsed: 42.42 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//a[contains(@class, "catalog-product__name")])[1]"}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e2fc7b19dd7be8ddbd64fb3f05627d42, findElement {using=xpath, value=(//a[contains(@class, "catalog-product__name")])[1]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\stasp\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64116}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64116/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e2fc7b19dd7be8ddbd64fb3f05627d42
+
+Ноутбуки - Таблица с тремя колонками ноут  Time elapsed: 29.432 s  <<< ERROR!
+io.cucumber.junit.platform.engine.UndefinedStepException: 
+The step 'Установлена сортировка и фильтры из таблицы с тремя колонками' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Когда("Установлена сортировка и фильтры из таблицы с тремя колонками")
+public void установлена_сортировка_и_фильтры_из_таблицы_с_тремя_колонками(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+
+
